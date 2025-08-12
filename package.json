@@ -1,0 +1,32 @@
+{
+  "name": "vela-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "storybook:web": "turbo run storybook --filter=@vela-ui/react",
+    "storybook:native": "turbo run storybook --filter=@vela-ui/native",
+    "format": "prettier --write packages/**/src/**/*.{ts,tsx}",
+    "lint": "eslint packages/**/src/**/*.{ts,tsx}",
+    "lint:fix": "eslint packages/**/src/**/*.{ts,tsx} --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.33.0",
+    "eslint-config-expo": "^9.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-sonarjs": "^3.0.4",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.5"
+  }
+}
