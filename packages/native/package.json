@@ -1,7 +1,14 @@
 {
   "name": "@vela-ui-kit/native",
+  "version": "0.1.0",
+  "description": "React Native components for Vela UI kit, built with Expo and react-native",
+  "author": "Nikita Berezhnyj <nikita.berezhnyj@gmail.com>",
+  "homepage": "https://github.com/NikitaBerezhnyj/vela-ui-kit",
+  "license": "MIT",
   "main": "expo-router/entry",
-  "version": "1.0.0",
+  "files": [
+    "expo-router"
+  ],
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -57,5 +64,20 @@
     "storybook": "^9.1.1",
     "typescript": "~5.8.3"
   },
-  "private": true
+  "bugs": {
+    "url": "https://github.com/NikitaBerezhnyj/vela-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikitaBerezhnyj/vela-ui-kit.git"
+  },
+  "keywords": [
+    "ui",
+    "ui-kit",
+    "react-native",
+    "expo",
+    "typescript",
+    "vela-ui-kit",
+    "components"
+  ]
 }

@@ -2,7 +2,7 @@
   "name": "@vela-ui-kit/core",
   "version": "0.1.0",
   "description": "Core components of Vela UI kit, reusable UI elements for front end projects",
-  "author": "Nikita Berezhnyj nikita.berezhnyj@gmail.com",
+  "author": "Nikita Berezhnyj <nikita.berezhnyj@gmail.com>",
   "homepage": "https://github.com/NikitaBerezhnyj/Vela-UI",
   "license": "MIT",
   "main": "dist/index.js",
