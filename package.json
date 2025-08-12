@@ -5,18 +5,22 @@
   "type": "commonjs",
   "description": "vela-ui-kit root package",
   "author": "Nikita Berezhnyj <nikita.berezhnyj@gmail.com>",
-  "homepage": "https://github.com/NikitaBerezhnyj/Vela-UI",
+  "homepage": "https://github.com/NikitaBerezhnyj/vela-ui-kit",
   "license": "MIT",
   "main": "index.js",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
+    "prepare": "husky install",
     "format": "prettier --write packages/**/src/**/*.{ts,tsx}",
     "lint": "eslint packages/**/src/**/*.{ts,tsx}",
-    "lint:fix": "eslint packages/**/src/**/*.{ts,tsx} --fix"
+    "lint:fix": "eslint packages/**/src/**/*.{ts,tsx} --fix",
+    "build": "npm run build --workspaces"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@typescript-eslint/eslint-plugin": "^8.39.0",
     "@typescript-eslint/parser": "^8.39.0",
     "eslint": "^9.33.0",
@@ -25,14 +29,23 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-sonarjs": "^3.0.4",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.1.5",
     "prettier": "^3.6.2"
   },
+  "lint-staged": {
+    "packages/**/src/**/*.{ts,tsx,js,jsx,json,css,scss}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "bugs": {
-    "url": "https://github.com/NikitaBerezhnyj/Vela-UI/issues"
+    "url": "https://github.com/NikitaBerezhnyj/vela-ui-kit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NikitaBerezhnyj/Vela-UI.git"
+    "url": "https://github.com/NikitaBerezhnyj/vela-ui-kit.git"
   },
   "keywords": [
     "ui",

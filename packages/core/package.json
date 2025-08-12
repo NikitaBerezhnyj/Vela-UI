@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Core components of Vela UI kit, reusable UI elements for front end projects",
   "author": "Nikita Berezhnyj <nikita.berezhnyj@gmail.com>",
-  "homepage": "https://github.com/NikitaBerezhnyj/Vela-UI",
+  "homepage": "https://github.com/NikitaBerezhnyj/vela-ui-kit",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -18,11 +18,11 @@
     "typescript": "^5.0.4"
   },
   "bugs": {
-    "url": "https://github.com/NikitaBerezhnyj/Vela-UI/issues"
+    "url": "https://github.com/NikitaBerezhnyj/vela-ui-kit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NikitaBerezhnyj/Vela-UI.git"
+    "url": "https://github.com/NikitaBerezhnyj/vela-ui-kit.git"
   },
   "keywords": [
     "ui",
