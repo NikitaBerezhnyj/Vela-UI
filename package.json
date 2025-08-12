@@ -41,6 +41,11 @@
     "prettier": "^3.6.2",
     "ts-jest": "^29.4.1"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "lint-staged": {
     "packages/**/src/**/*.{ts,tsx,js,jsx,json,css,scss}": [
       "prettier --write",
