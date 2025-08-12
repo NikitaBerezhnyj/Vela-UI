@@ -16,13 +16,19 @@
     "format": "prettier --write packages/**/src/**/*.{ts,tsx}",
     "lint": "eslint packages/**/src/**/*.{ts,tsx}",
     "lint:fix": "eslint packages/**/src/**/*.{ts,tsx} --fix",
+    "test": "npm run test:core && npm run test:react && npm run test:native",
+    "test:core": "jest --config packages/core/jest.config.cjs --passWithNoTests",
+    "test:react": "jest --config packages/react/jest.config.cjs --passWithNoTests",
+    "test:native": "jest --config packages/native/jest.config.cjs --passWithNoTests",
     "build": "npm run build --workspaces"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@types/jest": "^30.0.0",
     "@typescript-eslint/eslint-plugin": "^8.39.0",
     "@typescript-eslint/parser": "^8.39.0",
+    "babel-jest": "^29.7.0",
     "eslint": "^9.33.0",
     "eslint-config-expo": "^9.2.0",
     "eslint-config-prettier": "^10.1.8",
@@ -30,8 +36,10 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-sonarjs": "^3.0.4",
     "husky": "^8.0.0",
+    "jest": "^29.7.0",
     "lint-staged": "^16.1.5",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.1"
   },
   "lint-staged": {
     "packages/**/src/**/*.{ts,tsx,js,jsx,json,css,scss}": [
