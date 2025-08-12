@@ -1,5 +1,5 @@
 {
-  "name": "@vela-ui/core",
+  "name": "@vela-ui-kit/core",
   "version": "0.1.0",
   "description": "Core components of Vela UI kit, reusable UI elements for front end projects",
   "author": "Nikita Berezhnyj nikita.berezhnyj@gmail.com",
@@ -29,7 +29,7 @@
     "ui-kit",
     "react",
     "typescript",
-    "vela-ui",
+    "vela-ui-kit",
     "components"
   ]
 }

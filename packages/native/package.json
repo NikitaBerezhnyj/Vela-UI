@@ -1,5 +1,5 @@
 {
-  "name": "@vela-ui/native",
+  "name": "@vela-ui-kit/native",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {

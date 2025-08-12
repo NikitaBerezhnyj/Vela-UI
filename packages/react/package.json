@@ -1,5 +1,5 @@
 {
-  "name": "@vela-ui/react",
+  "name": "@vela-ui-kit/react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@vela-ui-kit/core": "^0.1.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "@vela-ui/core": "*"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.0",
